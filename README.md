@@ -1,0 +1,1 @@
+# Fastify with typescript template

@@ -1,0 +1,41 @@
+{
+  "name": "fastify-template-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "test": "yarn jest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "build": "tsc",
+    "start": "node build/src/index.js",
+    "watch": "nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "fastify": "^3.15.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.3.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.26.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "gts": "^3.1.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}

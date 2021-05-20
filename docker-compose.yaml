@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: ${APP_NAME}
+    build: .
+    image: ${APP_NAME}:${APP_VERSION}
+    ports:
+			- ${APP_PORT}:${APP_PORT}
+		networks:
+			- radio_network
+		volumes: 
+			- radio_volume
+		env_file: 
+			- .env
+
+	volumes: 
+		radio_volume:
+
+	networks: 
+		radio_network:
+			name: radio_network
